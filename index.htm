@@ -17,6 +17,7 @@
 			top: 0;
 			height: 210px;
 			width: 1228px;
+			transition: 2s linear;
 		}
 		.banner  .img:after{
 			content: "";
@@ -258,14 +259,14 @@ setInterval("changeBg()","2500");
 
 		/*自动轮播*/
 
-		var t = setInterval(function () { i++; move();},2000);
+		var t = setInterval(function () { i++; move();},4000);
 
 		/*鼠标悬停事件*/
 
 		$(".banner").hover(function () {
 			clearInterval(t);//鼠标悬停时清除定时器
 		}, function () {
-			t = setInterval(function () { i++; move(); }, 2000); //鼠标移出时清除定时器
+			t = setInterval(function () { i++; move(); }, 4000); //鼠标移出时清除定时器
 		});
 
 
@@ -306,7 +307,7 @@ setInterval("changeBg()","2500");
 				$(".banner .img li").css({ left: -(size - 1) * 307 });
 				i = size - 2;
 			}
-			$(".banner .img li").stop().animate({ left: -i * 307 }, 2000);
+			$(".banner .img li").stop().animate({ left: -i * 307 }, 6000);
 			var clone = $(".banner .img li").first().clone();//克隆第一张图片
 			$(".banner .img").append(clone);//复制到列表最后
 			$(".banner .img li").first().remove();
