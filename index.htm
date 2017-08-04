@@ -6,36 +6,44 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>无标题文档</title>
 <link href="css.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/swiper-3.4.2.min.css"/>
 	<style>
-		.banner {
-			position: relative;
+		.banner { width:1268px; height:219px; margin-left: 12px;margin-top: 30px; border:1px solid #808080; overflow:hidden;}
+		.banner .img{width:4000px;transition: margin-left 2s linear }
+		.banner .img img{width:297px; height:169px;}
+		.banner .img li{float:left; }
+		.swiper-container {
+			width: 100%;
+			height: 300px;
+			margin: 20px auto;
 		}
-		.banner  .img{
-			overflow: hidden;
-			position: absolute;
-			left: 0;
-			top: 0;
-			height: 210px;
-			width: 1228px;
-			transition: 2s linear;
+		.swiper-container {
+			width: 100%;
+			height: 100%;
 		}
-		.banner  .img:after{
-			content: "";
-			display: block;
-			clear: both;
-		}
-		.banner .img li{
-			float: left;
-			margin: 5px;
+		.swiper-slide {
 			text-align: center;
+			font-size: 18px;
+			background: #fff;
 
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
 		}
-		.banner .img li img{
+		.swiper-slide img{
 			width: 297px;
 			height: 169px;
 		}
-
-
 	</style>
 <script type="text/javascript"src="js/jquery-1.9.1.js"></script>
 <script language="javascript">
@@ -202,32 +210,106 @@ setInterval("changeBg()","2500");
 		    <!--<p><a href="#">新疆果子沟大桥</a></p>		  </td>-->
         <!--</tr>-->
       <!--</table>-->
-		<div class="banner">
-			<ul class="img">
-				<li>
-					<img src="pic/yjzs_pic.jpg" alt=""/>
-					<p><a href="#">新疆果子沟大桥1</a></p>
-				</li>
-				<li>
-					<img src="pic/pic05.jpg" alt=""/>
-					<p><a href="#">新疆果子沟大桥2</a></p>
-				</li>
-				<li>
-					<img src="pic/pic06.jpg" alt=""/>
-					<p><a href="#">新疆果子沟大桥3</a></p>
-				</li>
-				<li>
-					<img src="pic/top_bg09.jpg" alt=""/>
-					<p><a href="#">新疆果子沟大桥4</a></p>
-				</li>
-				<li>
-					<img src="pic/top_bg10.jpg" alt=""/>
-					<p><a href="#">新疆果子沟大桥5</a></p>
-				</li>
-			</ul>
+		<!--<div class="banner">-->
+			<!--<ul class="img">-->
+				<!--<li>-->
+					<!--<img src="pic/yjzs_pic.jpg" alt=""/>-->
+					<!--<p><a href="#">新疆果子沟大桥1</a></p>-->
+				<!--</li>-->
+				<!--<li>-->
+					<!--<img src="pic/pic05.jpg" alt=""/>-->
+					<!--<p><a href="#">新疆果子沟大桥2</a></p>-->
+				<!--</li>-->
+				<!--<li>-->
+					<!--<img src="pic/pic06.jpg" alt=""/>-->
+					<!--<p><a href="#">新疆果子沟大桥3</a></p>-->
+				<!--</li>-->
+				<!--<li>-->
+					<!--<img src="pic/top_bg09.jpg" alt=""/>-->
+					<!--<p><a href="#">新疆果子沟大桥4</a></p>-->
+				<!--</li>-->
+				<!--<li>-->
+					<!--<img src="pic/top_bg10.jpg" alt=""/>-->
+					<!--<p><a href="#">新疆果子沟大桥5</a></p>-->
+				<!--</li>-->
+			<!--</ul>-->
+
+		<!--</div>-->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" >
+					<div>
+						<img src="pic/yjzs_pic.jpg" alt=""/>
+						<p><a href="#">新疆果子沟大桥1</a></p>
+					</div>
+
+				</div>
+				<div class="swiper-slide">
+					<div>
+						<img src="pic/pic05.jpg" alt=""/>
+						<p><a href="#">新疆果子沟大桥1</a></p>
+					</div>
+
+				</div>
+				<div class="swiper-slide">
+					<div>
+						<img src="pic/pic06.jpg" alt=""/>
+						<p><a href="#">新疆果子沟大桥1</a></p>
+					</div>
+
+				</div>
+				<div class="swiper-slide">
+					<div>
+						<img src="pic/top_bg09.jpg" alt=""/>
+						<p><a href="#">新疆果子沟大桥1</a></p>
+					</div>
+
+				</div>
+				<div class="swiper-slide">
+					<div>
+						<img src="pic/top_bg10.jpg" alt=""/>
+						<p><a href="#">新疆果子沟大桥1</a></p>
+					</div>
+
+				</div>
+				<div class="swiper-slide" >
+					<div>
+						<img src="pic/yjzs_pic.jpg" alt=""/>
+						<p><a href="#">新疆果子沟大桥1</a></p>
+					</div>
+
+				</div>
+				<div class="swiper-slide">
+					<div>
+						<img src="pic/pic05.jpg" alt=""/>
+						<p><a href="#">新疆果子沟大桥1</a></p>
+					</div>
+
+				</div>
+				<div class="swiper-slide">
+					<div>
+						<img src="pic/pic06.jpg" alt=""/>
+						<p><a href="#">新疆果子沟大桥1</a></p>
+					</div>
+
+				</div>
+				<div class="swiper-slide">
+					<div>
+						<img src="pic/top_bg09.jpg" alt=""/>
+						<p><a href="#">新疆果子沟大桥1</a></p>
+					</div>
+
+				</div>
+				<div class="swiper-slide">
+					<div>
+						<img src="pic/top_bg10.jpg" alt=""/>
+						<p><a href="#">新疆果子沟大桥1</a></p>
+					</div>
+
+				</div>
+			</div>
 
 		</div>
-
 	</div>
   </div>
 </div>
@@ -236,90 +318,120 @@ setInterval("changeBg()","2500");
   <p class="logo_name">中交二航局结构工程有限公司</p>
   <p class="copyright_text">版权所有@中交二航局结构工程有限公司&nbsp;&nbsp;&nbsp;&nbsp;鄂ICP备14019245号</p>
 </div>
+
+
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
 <script type="text/javascript">
-	$(document).ready(function () {
-//	setInterval(function(){
-//
-//	},2000);
+	var swiper = new Swiper('.swiper-container', {
+//		pagination: '.swiper-pagination',
 
-
-		var i = 0;
-
-//		var clone = $(".banner .img li").first().clone();//克隆第一张图片
-//		$(".banner .img").append(clone);//复制到列表最后
-		var size = $(".banner .img li").size();
-		console.log(size);
-
-
-//		for (var j = 0; j < size-1; j++) {
-//			$(".banner .num").append("<li></li>");
-//		}
-
-//		$(".banner .num li").first().addClass("on");
-
-		/*自动轮播*/
-
-		var t = setInterval(function () { i++; move();},4000);
-
-		/*鼠标悬停事件*/
-
-		$(".banner").hover(function () {
-			clearInterval(t);//鼠标悬停时清除定时器
-		}, function () {
-			t = setInterval(function () { i++; move(); }, 4000); //鼠标移出时清除定时器
-		});
-
-
-
-
-		/*鼠标滑入原点事件*/
-//
-//		$(".banner .num li").hover(function () {
-//
-//			var index = $(this).index();//获取当前索引值
-//			i = index;
-//			$(".banner .img").stop().animate({ left: -index * 500 }, 500);
-//			$(this).addClass("on").siblings().removeClass("on");
-//		});
-
-
-
-//		/*向左按钮*/
-//		$(".banner .btn_l").click(function () {
-//			i++;
-//			move();
-//		})
-//
-//
-//		/*向右按钮*/
-//		$(".banner .btn_r").click(function () {
-//			i--;
-//			move();
-//		})
-
-		/*移动事件*/
-		function move() {
-			if (i == size) {
-				$(".banner .img").css({ left: 0 });
-				i = 1;
-			}
-			if (i == -1) {
-				$(".banner .img li").css({ left: -(size - 1) * 307 });
-				i = size - 2;
-			}
-			$(".banner .img li").stop().animate({ left: -i * 307 }, 6000);
-			var clone = $(".banner .img li").first().clone();//克隆第一张图片
-			$(".banner .img").append(clone);//复制到列表最后
-			$(".banner .img li").first().remove();
-//			if (i == size - 1) {
-//				$(".banner .num li").eq(0).addClass("on").siblings().removeClass("on");
-//			} else {
-//				$(".banner .num li").eq(i).addClass("on").siblings().removeClass("on");
-//			}
-		}
+		width:1268,
+		height:220,
+		slidesPerView: 4,
+		paginationClickable: true,
+		spaceBetween: 20,
+		autoplay:6000,
+		spend:3000,
+		loop:true
 	});
-
-
+//	$(document).ready(function () {
+//
+//		var i = 0;
+//
+////        var clone = $(".banner .img li").first().clone();//克隆第一张图片
+////        $(".banner .img").append(clone);//复制到列表最后
+////        $(".banner .img li").first().remove();//删除第一张图片
+//
+//		var size = $(".banner .img li").size();
+//		var bImg=$(".banner .img");
+//
+////        for (var j = 0; j < size-1; j++) {
+////            $(".banner .num").append("<li></li>");
+////        }
+////
+////        $(".banner .num li").first().addClass("on");
+//
+//		/*自动轮播*/
+//
+//		var t = setInterval(function () {  move();},2500);
+//
+//		/*鼠标悬停事件*/
+//
+//		$(".banner").hover(function () {
+//			clearInterval(t);//鼠标悬停时清除定时器
+//		}, function () {
+//			t = setInterval(function () {  move(); }, 2500); //鼠标移出时清除定时器
+//		});
+//
+//
+//
+//
+//		/*鼠标滑入原点事件*/
+////
+////        $(".banner .num li").hover(function () {
+////
+////            var index = $(this).index();//获取当前索引值
+////            i = index;
+////            $(".banner .img").stop().animate({ left: -index * 297 }, 500);
+////            $(this).addClass("on").siblings().removeClass("on");
+////        });
+//
+//
+//
+//		/*向左按钮*/
+////        $(".banner .btn_l").click(function () {
+////            i++;
+////            move();
+////        })
+////
+////
+////        /*向右按钮*/
+////        $(".banner .btn_r").click(function () {
+////            i--;
+////            move();
+////        })
+//		var clone = $(".banner .img li").first().clone();//克隆第一张图片
+//		bImg.append(clone);//复制到列表最后
+//		$(".banner .img li").first().remove();//删除第一张图片
+//		/*移动事件*/
+//		function move() {
+//
+//			if (i == 10) {
+//				bImg.css({ marginLeft: 0 });
+//				i = 0;
+//			}
+//			console.log("i="+i);
+//			console.log("size="+size);
+////            if (i == -1) {
+////                bImg.css({ marginLeft: -317 });
+////                i = size - 2;
+////            }
+//			console.log("i1="+i);
+//			console.log("size1="+size);
+//			bImg.stop().animate({ marginLeft:-i* 317 }, 500,function(){
+//				i++;
+//			});
+//
+//			var clone = $(".banner .img li").eq(i).clone();//克隆第一张图片
+//			bImg.append(clone);//复制到列表最后
+////            $(".banner .img li").first().remove();//删除第一张图片
+////            console.log(bImg.attr("style"));
+////            console.log(bImg.attr("style").split(":")[1]);
+//			if(parseInt(bImg.attr("style").split(":")[1])<=-317){
+////                console.log("1");
+//				bImg.attr({style:"margin-left:0"});
+////                console.log(bImg.attr("style"));
+//
+//
+//			}
+////            if (i == size - 1) {
+////                $(".banner .num li").eq(0).addClass("on").siblings().removeClass("on");
+////            } else {
+////                $(".banner .num li").eq(i).addClass("on").siblings().removeClass("on");
+////            }
+//		}
+//	});
+//
 
 </script>
 </body>
