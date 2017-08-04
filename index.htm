@@ -8,18 +8,24 @@
 <link href="css.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/swiper-3.4.2.min.css"/>
 	<style>
-		.banner { width:1268px; height:219px; margin-left: 12px;margin-top: 30px; border:1px solid #808080; overflow:hidden;}
-		.banner .img{width:4000px;transition: margin-left 2s linear }
-		.banner .img img{width:297px; height:169px;}
-		.banner .img li{float:left; }
+		/*.banner { width:1268px; height:219px; margin-left: 12px;margin-top: 30px; border:1px solid #808080; overflow:hidden;}*/
+		/*.banner .img{width:4000px;transition: margin-left 2s linear }*/
+		/*.banner .img img{width:297px; height:169px;}*/
+		/*.banner .img li{float:left; }*/
+		/*.swiper-container {*/
+			/*width: 100%;*/
+			/**/
+			/*margin: 20px auto;*/
+		/*}*/
 		.swiper-container {
-			width: 100%;
-			height: 300px;
-			margin: 20px auto;
-		}
-		.swiper-container {
-			width: 100%;
+			/*width: 100%;*/
+			width: 1180px;
 			height: 100%;
+
+		}
+		.swiper-wrapper{
+			width: 1268px;
+			z-index: 5;
 		}
 		.swiper-slide {
 			text-align: center;
@@ -41,7 +47,7 @@
 			align-items: center;
 		}
 		.swiper-slide img{
-			width: 297px;
+			width: 277px;
 			height: 169px;
 		}
 	</style>
@@ -210,31 +216,7 @@ setInterval("changeBg()","2500");
 		    <!--<p><a href="#">新疆果子沟大桥</a></p>		  </td>-->
         <!--</tr>-->
       <!--</table>-->
-		<!--<div class="banner">-->
-			<!--<ul class="img">-->
-				<!--<li>-->
-					<!--<img src="pic/yjzs_pic.jpg" alt=""/>-->
-					<!--<p><a href="#">新疆果子沟大桥1</a></p>-->
-				<!--</li>-->
-				<!--<li>-->
-					<!--<img src="pic/pic05.jpg" alt=""/>-->
-					<!--<p><a href="#">新疆果子沟大桥2</a></p>-->
-				<!--</li>-->
-				<!--<li>-->
-					<!--<img src="pic/pic06.jpg" alt=""/>-->
-					<!--<p><a href="#">新疆果子沟大桥3</a></p>-->
-				<!--</li>-->
-				<!--<li>-->
-					<!--<img src="pic/top_bg09.jpg" alt=""/>-->
-					<!--<p><a href="#">新疆果子沟大桥4</a></p>-->
-				<!--</li>-->
-				<!--<li>-->
-					<!--<img src="pic/top_bg10.jpg" alt=""/>-->
-					<!--<p><a href="#">新疆果子沟大桥5</a></p>-->
-				<!--</li>-->
-			<!--</ul>-->
 
-		<!--</div>-->
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide" >
@@ -309,7 +291,10 @@ setInterval("changeBg()","2500");
 				</div>
 			</div>
 
+
 		</div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
 	</div>
   </div>
 </div>
@@ -325,14 +310,17 @@ setInterval("changeBg()","2500");
 	var swiper = new Swiper('.swiper-container', {
 //		pagination: '.swiper-pagination',
 
-		width:1268,
+		width:1180,
 		height:220,
 		slidesPerView: 4,
 		paginationClickable: true,
 		spaceBetween: 20,
 		autoplay:3000,
+		autoplayDisableOnInteraction:false,
 		spend:3000,
-		loop:true
+		loop:true,
+		prevButton:'.swiper-button-prev',
+		nextButton:'.swiper-button-next'
 	});
 //	$(document).ready(function () {
 //

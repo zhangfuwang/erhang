@@ -61,7 +61,7 @@ h4{font-family:"Microsoft YaHei";font-size:30px; line-height:40px; color:#333;fo
 .ysjz_btn{ font-family:"Microsoft YaHei";font-size:16px; text-align:center;color:#2a333c;font-weight:normal; text-decoration:none; padding:2px 15px 2px 15px; background:#fff; border-radius:3px; word-wrap:break-word; word-break:break-all; border:1px solid #818080; margin-right:12px;}
 .ysjz_btn_select{ font-family:"Microsoft YaHei";font-size:16px; text-align:center;color:#1b6eb3;font-weight:normal; text-decoration:none; padding:2px 15px 2px 15px; background:#fff; border-radius:3px; word-wrap:break-word; word-break:break-all; border:1px solid #818080; margin-right:12px;}
 #yjzs_btn_area a:hover{color:#1b6eb3;}
-#yjzs_pic_area{ width:1280px; margin:auto;}
+#yjzs_pic_area{ width:1280px; margin:auto; position: relative}
 .yjzs_pic{ border:1px solid #818080;}
 #yjzs_pic_area a{font-family:"Microsoft YaHei";font-size:16px; text-align:left; line-height:30px; color:#2a333c;font-weight:normal; text-decoration:none;}
 #yjzs_pic_area a:hover{color:#1b6eb3;}
